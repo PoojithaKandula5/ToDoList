@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg?w=1380")
+    no-repeat center center/cover;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start; /* Moves the box to the left */
+  padding-left: 50px; /* Adjust position */
+  overflow: hidden;
+}
+
+.ta-wrapper {
+  background: #9370db; /* Dark Lavender */
+  color: white; /* Keep text white */
+  padding: 20px;
+  border-radius: 10px;
+  border: 4px solid #d3d3d3; /* Light Gray Inner Border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ta-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.heading h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  outline: none;
+  border: 0;
+  background: #d3d3d3; /* Grey background */
+  padding: 10px;
+  color: #3c424a; /* Dark Gray text */
+  width: 500px;
+  border-radius: 5px;
+}
+
+.input-wrapper button {
+  background: #e55c8a;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-wrapper button:hover {
+  background: #ff4081;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+.todo-item input {
+  background: transparent;
+  border: none;
+  color: white; /* Keep text white */
+  outline: none;
+}
+
+/* ✅ Updated Pink Icons */
+.todo-item i {
+  color: #ff4081; /* Pink */
+  background: transparent;
+  border: none; /* Removed border */
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.3s;
+  margin-left: 5px;
+}
+
+.todo-item i:hover {
+  color: #ff4081; /* Keep same pink on hover */
+  transform: rotate(15deg);
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ddd; /* Lighter text for completed tasks */
+}
+
+.fa-x {
+  padding: 6px 8px !important;
+}
